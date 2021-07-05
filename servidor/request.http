@@ -1,7 +1,43 @@
 POST http://localhost:4000/api/usuarios
 content-type: application/json
 
-{
-    "email": "lanavarrogs@gmail.com",
-    "password": "123"
+{   
+    "nombre": "Luis",
+    "email": "correo@correo.com",
+    "password": "123456"
 }
+
+###
+POST http://localhost:4000/api/usuarios
+content-type: application/json
+
+{ }
+
+###
+POST  http://localhost:4000/api/auth
+content-type: application/json
+
+{ 
+    "email": "lanavarrogs@gmail.com",
+    "password": "123456"
+}
+
+###
+POST  http://localhost:4000/api/proyectos
+content-type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjBkOTBkOTkzZDBjYmI1MGZhNGZjOWFkIn0sImlhdCI6MTYyNTI2MDI0MywiZXhwIjoxNjI1MjYzODQzfQ.aHcYtvPa_qUt7nA2G-WFFjnPn9aK22qgJo0cO3WoNIE
+
+{ 
+    "nombre": "Proyecto MERN "
+}
+
+###
+GET   http://localhost:4000/api/proyectos
+content-type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjBkOTBkOTkzZDBjYmI1MGZhNGZjOWFkIn0sImlhdCI6MTYyNTI2MDI0MywiZXhwIjoxNjI1MjYzODQzfQ.aHcYtvPa_qUt7nA2G-WFFjnPn9aK22qgJo0cO3WoNIE
+
+###
+PUT http://localhost:4000/api/proyectos
+content-type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjBkOTBkOTkzZDBjYmI1MGZhNGZjOWFkIn0sImlhdCI6MTYyNTI2MDI0MywiZXhwIjoxNjI1MjYzODQzfQ.aHcYtvPa_qUt7nA2G-WFFjnPn9aK22qgJo0cO3WoNIE
+{ }
